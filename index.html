@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pageContainer">
+    <header class="header">
+      <h1 class="h1 header__h1"> Simple, traffic-based pricing</h1>
+      <h2 class="h2 header__h2"> Sign-up for our 30-day trial. No credit card required. </h2>
+    </header>
+    <main class="main">
+      <form class="form" action="submit">
+      <section class="main__section section main__section--2columns">
+        <p class="section__2columns section__2columns--pageviews"><span id="numberPageview">100K</span> Pageviews</p>
+        <div class="section__2columns section__2columns--priceDiv"> <p id="pricePerMonth">$16.00</p> <p class="section__2columns--resumePrice">/month</p></div>
+      </section>
+      <section class="main__section section main__section--upper">
+        <input type="range" name="price__range" id="price__range" class="price__range" min="0" max="4" value="2">
+      </section>
+      <section class="main__section section main__section--chekBox">  
+        <p class="section__billType">Monthly Billing</p>
+        <label class="switch">
+        <input type="checkbox" name="" id="switchDiscount" class="section__inputBillType">
+        <span class="slider round"></span>
+        </label>
+        <p class="section__billType section__billtype"> Yearly Billing </p>
+        <p class="section__billType section__billtype--discount">25% discount</p>
+      </section>
+      <section class="main__section section main__section--bottom">
+        <ul class="ul__listAdvantages">
+          <li class="ul__listAdvantages--li"><img src="./images/icon-check.svg" alt="" class="ul__listAdvantages--img">Unlimited websites</li>
+          <li class="ul__listAdvantages--li"><img src="./images/icon-check.svg" alt="" class="ul__listAdvantages--img">100% data ownership</li>
+          <li class="ul__listAdvantages--li"><img src="./images/icon-check.svg" alt="" class="ul__listAdvantages--img">Email reports</li>
+        </ul>
+        <button class="section__startButton"> Start my trial</button>
+      </section>
+    </form>
+    </main>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
